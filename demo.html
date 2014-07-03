@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/uploadfile.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.uploadfile.min.js"></script>
+</head>
+<body>
+<div id="fileuploader">文件上传</div>
+<script>
+$(document).ready(function()
+{
+	$("#fileuploader").uploadFile({
+	url:"http://127.0.0.1/upload",
+	fileName:"myfile"
+	});
+});
+</script>
+</body>
+</html>
